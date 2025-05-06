@@ -460,7 +460,7 @@ function App() {
     }
 
     // Envia para o n8n
-    await fetch('https://faelsouz0211.app.n8n.cloud/webhook/leads', {
+    await fetch('/api/send-to-n8n', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name,company, email, phone }),
