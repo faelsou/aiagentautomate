@@ -2,11 +2,9 @@
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         try {
-            const response = await fetch('https://faelsouz0211.app.n8n.cloud/webhook/leads', {
+            const response = await fetch('https://faelsouz0211.app.n8n.cloud/webhook-test/leads', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(req.body),
             });
 

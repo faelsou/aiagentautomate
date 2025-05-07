@@ -10,7 +10,7 @@ app.post('/api/submit-form', async (req, res) => {
     const { name,company, email, phone } = req.body;
 
     try {
-        const response = await fetch('https://faelsouz0211.app.n8n.cloud/webhook/inicio-jornada', {
+        const response = await fetch('https://faelsouz0211.app.n8n.cloud/webhook/leads', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, company, email, phone }),
