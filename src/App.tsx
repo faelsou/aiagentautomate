@@ -388,24 +388,10 @@ function App() {
 
   const handleWhatsAppClick = () => {
     const message = "Olá! Gostaria de iniciar a jornada com AIAgent Automate.";
-    const phoneNumber = "5511952313944"; // Replace with actual business phone number
+    const phoneNumber = "15551701332"; // Replace with actual business phone number
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
-  //  const handleTrialSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  //    e.preventDefault();
-  //    const formData = new FormData(e.currentTarget);
-  //    const message = `Olá! Gostaria de iniciar a jornada com AIAgent Automate.\n\nDados da empresa:\nEmpresa: ${formData.get('company')}\nEmail: ${formData.get('email')}\nTelefone: ${formData.get('phone')}`;
-  //    const phoneNumber = "5511952313944"; // Replace with actual business phone number
-  //    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
-  //    setShowTrialModal(false);
-  //  };
-  //  const handleTrialSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //    e.preventDefault();
-  //    const formData = new FormData(e.currentTarget);
-  //    const company = formData.get('company') as string;
-  //    const email = formData.get('email') as string;
-  //    const phone = formData.get('phone') as string;
   //
   //    // Envia dados para o n8n via webhook
   //    //    await fetch('https://faelsouz0211.app.n8n.cloud/webhook/inicio-jornada', {
@@ -468,7 +454,7 @@ function App() {
 
     // Abre WhatsApp
     const message = `Olá! Gostaria de iniciar a jornada com AIAgent Automate.`;
-    const phoneNumber = "5511952313944";
+    const phoneNumber = "15551701332";
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
 
     setShowTrialModal(false);
